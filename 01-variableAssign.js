@@ -40,6 +40,7 @@ console.log("Pincode:",pincode);
 console.log("Gender:",gender);
 console.log("Is Married:",isMarried)
 
+//sha key:  3f85f7f98117fd762f09200c17aaf4fddacc9d13
 
 
 
