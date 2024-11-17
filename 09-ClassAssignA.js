@@ -10,7 +10,7 @@ class Vehicle {
     }
     details(){
 
-        console.log(`==== Vehicle ${this.makeName} Details ====== `);
+        console.log(`Vehicle ${this.makeName} Details==`);
 
         console.log(`Model Name: ${this.modelName}, Price: ${this.price}, Color: ${this.color},Fuel Type: ${this.fuelType}, Variant: ${this.variant}`);  
 
@@ -45,7 +45,7 @@ class College {
     }
     display(){
 
-        console.log(`====  ${this.CollegeName} Details ====== `);
+        console.log(`College Name is  ${this.CollegeName} Details ==`);
 
         console.log(` Address: ${this.city}, Number Of Departments: ${this.totalDepartment},University: ${this.university}, College Code: ${this.collegeCode}`);  
 

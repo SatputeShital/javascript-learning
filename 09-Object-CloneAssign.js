@@ -58,4 +58,6 @@ for (const key in sbiDetails) {
     }
 }
 
+console.log(`Sha Key :4682e3f020f4922432760442b2a60bb6aa3b7ecf`);
+
 
