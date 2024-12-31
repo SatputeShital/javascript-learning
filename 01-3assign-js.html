@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Two Number</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #main
+    {
+        border: 4px solid;
+        border-radius: 5px;
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        left: 500px;
+    }
+    h2{
+      margin-top: 40px;
+    }
+    input
+    {
+      margin-top: 20px;
+      height: 33px;
+      border: 2px solid;
+      border-radius: 4px;
+    }
+   
+    button {
+        font-weight: bold;
+        border: 3px solid;
+        border-radius: 5px;
+      margin-top: 35px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100px;
+    }
+    div{
+      margin-top: 30px;
+      position: absolute;
+      left: 100px;
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <section id="main">
+    <h2>Addition of Two Numbers</h2>
+     <input type="number" id="input1" class="firstNum" placeholder="First Number" >
+     <input type="number" id="input2" class="seconNum" placeholder="Second Number" >
+     <!-- <input type="number" id="sum" class="sumNum" placeholder="Sum of two Number" > -->
+     <button id="addButton" >Add</button>
+
+     <div class="result" id="resultDisplay">The Result of Addition : </div>
+  </section>
+  <script>
+    //select DOM elements
+    const input1=document.getElementById(`input1`);
+    const input2=document.getElementById(`input2`);
+    // const sum=document.getElementById(`sum`);
+    const addButton=document.getElementById(`addButton`);
+    const resultDisplay = document.getElementById('resultDisplay');
+    
+  //  let add=0;
+    addButton.addEventListener(`click`, ()=>
+  {
+    // Parse the input values as numbers
+    const num1 = parseFloat(input1.value);
+      const num2 = parseFloat(input2.value);
+      const sum = num1 + num2;
+      resultDisplay.textContent = `The Result of Addition : ${sum}`;
+
+  })
+
+  </script>
+</body>
+</html>
